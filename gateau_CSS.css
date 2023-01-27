@@ -42,9 +42,8 @@ div.catagorie{
 
 div.contenu{
     background-color: white;
-    margin: 60px 10% 80px 10% ;
-    padding: 0px 30px 30px 30px;
-    min-width: 525px;
+    margin: 40px 8px 40px 8px ;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0px 0px 10px 4px #000000C0;
     overflow: visible;
     
@@ -85,19 +84,19 @@ table.info{
     width: 100%;
     color: white;
     background-color: #6C829DC0;
-    height:90px;
+    height:50px;
 }
 
 table.info td {
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th {
 
     vertical-align: bottom;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 4px;
 }
 
@@ -116,7 +115,7 @@ img.info{
 
 div.colonne{
 
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
     
 }
@@ -134,16 +133,11 @@ div.colonne1{
 
     
     display: inline-block;
-    margin-right: 10%;
+  
     
     
 }
 
-div.colonne2{
-    float: right; /*met toi à droite */
-    
-    
-}
 
 div.ingredients p{
     border: 1px solid #6C829D ;
@@ -190,6 +184,74 @@ table.preparation td.preparation_etape{
 }
 
 
+/* Style pour ordinateur */
+@media only screen and (min-width: 768px) {
+
+    div.contenu{
+        
+        min-width: 525px; 
+        margin: 60px 10% 80px 10% ;
+        padding: 0px 30px 30px 30px;
+        
+        
+    }
+
+
+    table.info{
+
+        height:90px;
+    }
+
+    table.info th {
+        font-size: 16px;
+        
+    }
+
+    table.info td {
+        text-align: center;
+        font-size: 16px;
+        vertical-align: top;
+    }
+    
+
+    div.colonne{
+
+        width: 45%;
+        
+    }
+    
+    
+    div.colonne1{
+        display: inline-block;
+        margin-right: 10%;
+            
+    }
+    
+    div.colonne2{
+
+        
+        float: right; /*met toi à droite */
+        
+        
+    }
+    
+    
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    div.contenu{
+        
+        min-width: 525px; 
+        margin-left: auto ;
+        margin-right: auto;
+        width: 645px;
+        
+        
+    }
+}
 /* Pour la méthode de ID
     p#catagorie(ou #catagorie ){
         background-color: black;
